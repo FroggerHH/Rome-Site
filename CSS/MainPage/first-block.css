@@ -1,0 +1,17 @@
+.first-block {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #ff9a9e, #fecfef);
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px; /* Регулируйте ширину блока по своему усмотрению */
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 100px; /* Регулируйте размер изображения по своему усмотрению */
+}
+
+.text {
+    margin-left: 20px;
+}

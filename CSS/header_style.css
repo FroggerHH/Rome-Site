@@ -12,7 +12,7 @@ header {
 }
 
 #top-container {
-    background-image: url("images/old-bronze.jpg");
+    background-image: url("../images/old-bronze.jpg");
     padding-left: 100px;
     padding-right: 100px;
 }
