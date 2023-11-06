@@ -18,20 +18,25 @@ section {
             rgba(0, 0, 0, 0.91),
             rgba(0, 0, 0, 0.2) 45%,
             rgba(0, 0, 0, 0.8) 100%
-    ), url('../../images/old-metal1.jpg');
+    ), url('../../images/marble.jpg');
     background-size: cover;
     background-position: center;
     /*cursor: pointer; Should be automatically added by <a> */
 
     color: white;
     text-decoration: none;
+
+    transition: all 0.3s ease-in-out;
 }
 .info-block-content {
-    transform: scale(1);
     transition: all 0.3s ease-in-out;
 }
 .info-block-holder:hover .info-block-content{
     transform: scale(1.05);
+}
+.info-block-holder:hover + .info-block{
+    /*background-size: 110%;*/
+    text-align: left;
 }
 
 .info-block-title {
@@ -45,4 +50,32 @@ section {
 .info-block p {
     font-size: 16px;
     color: #ff9446;
+}
+
+
+#history-block{
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.91),
+            rgba(0, 0, 0, 0.2) 45%,
+            rgba(0, 0, 0, 0.8) 100%
+    ), url('../../images/history-block-BG_1.jpg');
+}
+
+#culture-block{
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.91),
+            rgba(0, 0, 0, 0.2) 45%,
+            rgba(0, 0, 0, 0.8) 100%
+    ), url('../../images/culture-block-BG_1.webp');
+}
+
+#art-block{
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.91),
+            rgba(0, 0, 0, 0.2) 45%,
+            rgba(0, 0, 0, 0.8) 100%
+    ), url('../../images/art-block-BG_1.jpg');
 }
