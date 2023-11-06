@@ -19,24 +19,20 @@ section {
             rgba(0, 0, 0, 0.2) 45%,
             rgba(0, 0, 0, 0.8) 100%
     ), url('../../images/marble.jpg');
-    background-size: cover;
+
+    background-size: 100%;
     background-position: center;
+    transition: background-size 0.3s ease;
     /*cursor: pointer; Should be automatically added by <a> */
 
     color: white;
     text-decoration: none;
-
-    transition: all 0.3s ease-in-out;
 }
 .info-block-content {
     transition: all 0.3s ease-in-out;
 }
 .info-block-holder:hover .info-block-content{
-    transform: scale(1.05);
-}
-.info-block-holder:hover + .info-block{
-    /*background-size: 110%;*/
-    text-align: left;
+    transform: scale(1.08);
 }
 
 .info-block-title {
@@ -68,7 +64,7 @@ section {
             rgba(0, 0, 0, 0.91),
             rgba(0, 0, 0, 0.2) 45%,
             rgba(0, 0, 0, 0.8) 100%
-    ), url('../../images/culture-block-BG_1.webp');
+    ), url('../../images/culture-block-BG_1.png');
 }
 
 #art-block{

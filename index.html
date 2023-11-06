@@ -23,11 +23,11 @@
                 <picture>
                     <img alt="logo" class="image" id="header-logo" src="images/shortcutIcon.png">
                 </picture>
-                <div class="top-tagline"> Какой-то текст для заголовка</div>
+                <div class="top-tagline"> Римская Империя</div>
             </div>
         </div>
         <div id="top-head">
-            <div id="top-head-text"> Какой-то текст для заголовка</div>
+            <div id="top-head-text"> Римская Империя</div>
         </div>
     </div>
 </header>
@@ -78,6 +78,22 @@
     </section>
 
 
+
+    <script>
+        const infoBlockHolders = document.querySelectorAll('.info-block-holder');
+
+        infoBlockHolders.forEach(function(holder) {
+            holder.addEventListener('mouseover', function() {
+                const infoBlock = this.closest('.info-block');
+                infoBlock.style.backgroundSize = '110%';
+            });
+
+            holder.addEventListener('mouseout', function() {
+                const infoBlock = this.closest('.info-block');
+                infoBlock.style.backgroundSize = '100%';
+            });
+        });
+    </script>
 </div>
 
 
