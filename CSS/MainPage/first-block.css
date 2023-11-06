@@ -1,17 +1,48 @@
-.first-block {
+section {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #ff9a9e, #fecfef);
+}
+
+.info-block {
     border-radius: 10px;
-    padding: 20px;
-    width: 400px; /* Регулируйте ширину блока по своему усмотрению */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.91),
+            rgba(0, 0, 0, 0.2) 45%,
+            rgba(0, 0, 0, 0.8) 100%
+    ), url('../../images/old-metal1.jpg');
+    background-size: cover;
+    background-position: center;
+    /*cursor: pointer; Should be automatically added by <a> */
+
+    color: white;
+    text-decoration: none;
+}
+.info-block-content {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+.info-block-holder:hover .info-block-content{
+    transform: scale(1.05);
 }
 
-.profile img {
-    border-radius: 50%;
-    width: 100px; /* Регулируйте размер изображения по своему усмотрению */
+.info-block-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #a64c00;
+    text-shadow: 2px 2px 4px rgb(31, 31, 31);
+    text-decoration: #724222 underline;
 }
 
-.text {
-    margin-left: 20px;
+.info-block p {
+    font-size: 16px;
+    color: #ff9446;
 }
