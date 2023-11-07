@@ -8,10 +8,10 @@ section {
 .info-block {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    margin: 20px;
     width: 300px;
+    height: 270px;
     text-align: center;
+    margin: 20px;
 
     background-image: linear-gradient(
             to top,
@@ -28,28 +28,50 @@ section {
     color: white;
     text-decoration: none;
 }
-.info-block-content {
-    transition: all 0.3s ease-in-out;
+
+.info-block-holder {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: -8%;
+    padding: 0 30px;
 }
-.info-block-holder:hover .info-block-content{
+
+.info-block-holder:hover .info-block-content {
+    transform: scale(1.08) translateY(50px);
+}
+
+.info-block-holder:hover .info-block-content p {
     transform: scale(1.08);
 }
 
+.info-block-holder:hover .info-block-title {
+    transform: translateY(50px);
+}
+
 .info-block-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #a64c00;
+    transition: transform 0.4s ease-in-out;
+    position: relative;
+    transform: translateY(110px);
+}
+
+.info-block-title h2 {
+    color: #ef7914;
     text-shadow: 2px 2px 4px rgb(31, 31, 31);
     text-decoration: #724222 underline;
 }
 
-.info-block p {
-    font-size: 16px;
-    color: #ff9446;
+.info-block-content {
+    transform: scale(0);
+    font-size: 15px;
+    /*color: #eed9b1;*/
+    color: #fff3cc;
+    transition: transform 0.4s ease-in-out;
+    height: min-content;
 }
 
 
-#history-block{
+#history-block {
     background-image: linear-gradient(
             to top,
             rgba(0, 0, 0, 0.91),
@@ -58,7 +80,7 @@ section {
     ), url('../../images/history-block-BG_1.jpg');
 }
 
-#culture-block{
+#culture-block {
     background-image: linear-gradient(
             to top,
             rgba(0, 0, 0, 0.91),
@@ -67,11 +89,20 @@ section {
     ), url('../../images/culture-block-BG_1.png');
 }
 
-#art-block{
+#art-block {
     background-image: linear-gradient(
             to top,
             rgba(0, 0, 0, 0.91),
             rgba(0, 0, 0, 0.2) 45%,
             rgba(0, 0, 0, 0.8) 100%
     ), url('../../images/art-block-BG_1.jpg');
+}
+
+#personalities-block {
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.91),
+            rgba(0, 0, 0, 0.2) 45%,
+            rgba(0, 0, 0, 0.8) 100%
+    ), url('../../images/julius-caesar.jpg');
 }

@@ -2,101 +2,133 @@
 
 <html lang="ru">
 <head>
+    <meta charset="UTF-8">
     <title>Древний Рим</title>
     <link href="CSS/stuff_style.css" rel="stylesheet">
     <link href="CSS/header_style.css" rel="stylesheet">
     <link href="CSS/MainPage/mainText_style.css" rel="stylesheet">
-    <link href="CSS/MainPage/first-block.css" rel="stylesheet">
-
-    <meta charset="UTF-8">
-
-    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link href="CSS/MainPage/nav-block.css" rel="stylesheet">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
     <link href="images/shortcutIcon.png" rel="shortcut icon">
 </head>
 
 <body>
-<header>
-    <div class="banner">
-        <div id="top-container">
-            <div id="embedded-top-container">
-                <picture>
-                    <img alt="logo" class="image" id="header-logo" src="images/shortcutIcon.png">
-                </picture>
-                <div class="top-tagline"> Римская Империя</div>
+<div id="wrapper-root">
+    <div id="wrapper">
+        <header>
+            <div class="banner">
+                <div id="top-container">
+                    <div id="embedded-top-container">
+                        <picture>
+                            <img alt="logo" class="image" id="header-logo" src="images/shortcutIcon.png">
+                        </picture>
+                        <div class="top-tagline"> Римская Империя</div>
+                    </div>
+                </div>
+                <div id="top-head">
+                    <div id="top-head-text"> Римская Империя</div>
+                </div>
+            </div>
+
+            <noscript>
+                <div style="background-color: #de4949; color: #fff; padding: 5px; text-align: center;">
+                    Please enable javascript to continue.
+                </div>
+            </noscript>
+        </header>
+
+        <!--<div id="bg-blur"></div>-->
+
+        <div id="main-text">
+            <div id="main-text-holder">
+                <div id="main-text-content">
+                    <p>Как часто вы думаете о Римской Империи? <br>А о её истории впринципе?</p>
+                    <hr class="no-border small-hr">
+                    <p>Наш проект предлагает вам отправиться в прошлое Рима и подумать о нём.</p>
+                    <p>Узнать о её эпохах, влиянии, людях и событиях.</p>
+                    <hr class="no-border small-hr">
+                </div>
             </div>
         </div>
-        <div id="top-head">
-            <div id="top-head-text"> Римская Империя</div>
-        </div>
-    </div>
-</header>
 
-<div id="main-text">
-    <div id="main-text-holder">
-        <div id="main-text-content">
-            <p>Как часто вы думаете о Римской Империи? <br>А о её истории впринципе?</p>
-            <hr class="no-border small-hr">
-            <p>Наш проект предлагает вам отправиться в прошлое Рима и подумать о нём.</p>
-            <p>Узнать о её эпохах, влиянии, людях и событиях.</p>
-            <hr class="no-border small-hr">
+        <div class="nav-block">
+            <section>
+                <a class="info-block" href="History.html" id="history-block">
+                    <div class="info-block-holder">
+                        <div class="info-block-title">
+                            <h2>История Древнего Рима</h2>
+                        </div>
+                        <div class="info-block-content">
+                            <p>Здесь вы можете узнать об истории Древнего Рима, начиная с его основания и заканчивая
+                                падением
+                                Римской империи. Исследуйте важные события и ключевых фигур того времени.</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="info-block" href="Culture.html" id="culture-block">
+                    <div class="info-block-holder">
+                        <div class="info-block-title">
+                            <h2>Культура Древнего Рима</h2>
+                        </div>
+                        <div class="info-block-content">
+                            <p>Погрузитесь в культуру Древнего Рима, включая религию, обычаи, и архитектуру. Узнайте о
+                                влиянии
+                                римской
+                                культуры на современное общество и ее наследии в различных областях искусства.</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="info-block" href="Art.html" id="art-block">
+                    <div class="info-block-holder">
+                        <div class="info-block-title">
+                            <h2>Искусство Древнего Рима</h2>
+                        </div>
+                        <div class="info-block-content">
+                            <p>Изучите искусство Древнего Рима, начиная от скульптуры и архитектуры до живописи и
+                                литературы.
+                                Узнайте о
+                                великих художниках и архитекторах времен Древнего Рима и их влиянии на мировое
+                                искусство.</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="info-block" href="Personalities.html" id="personalities-block">
+                    <div class="info-block-holder">
+                        <div class="info-block-title">
+                            <h2>Известные Личности</h2>
+                        </div>
+
+                        <div class="info-block-content">
+                            <p>От Юлия Цезаря до Августа, от Марка Антония до Клеопатры, знаменитые личности Римской
+                                Империи...</p>
+                            <p>Узнайте больше о их жизни, влиянии и вкладе в историю.</p>
+                        </div>
+                    </div>
+                </a>
+            </section>
         </div>
+
+
+        <footer>
+            <p>&copy; 2023 Сайт о Римской Империи. Все права защищены.</p>
+        </footer>
     </div>
 </div>
 
-<div class="first-block">
-    <section>
-        <a class="info-block" id="history-block" href="History.html">
-            <div class="info-block-holder">
-                <div class="info-block-content">
-                    <h2 class="info-block-title">История Древнего Рима</h2>
-                    <p>Здесь вы можете узнать об истории Древнего Рима, начиная с его основания и заканчивая падением
-                        Римской империи. Исследуйте важные события и ключевых фигур того времени.</p>
-                </div>
-            </div>
-        </a>
-        <a class="info-block" id="culture-block" href="Culture.html">
-            <div class="info-block-holder">
-                <div class="info-block-content">
-                    <h2 class="info-block-title">Культура Древнего Рима</h2>
-                    <p>Погрузитесь в культуру Древнего Рима, включая религию, обычаи, и архитектуру. Узнайте о влиянии
-                        римской
-                        культуры на современное общество и ее наследии в различных областях искусства.</p>
-                </div>
-            </div>
-        </a>
-        <a class="info-block" id="art-block" href="Art.html">
-            <div class="info-block-holder">
-                <div class="info-block-content">
-                    <h2 class="info-block-title">Искусство Древнего Рима</h2>
-                    <p>Изучите искусство Древнего Рима, начиная от скульптуры и архитектуры до живописи и литературы.
-                        Узнайте о
-                        великих художниках и архитекторах времен Древнего Рима и их влиянии на мировое искусство.</p>
-                </div>
-            </div>
-        </a>
-    </section>
+<script>
+    const infoBlockHolders = document.querySelectorAll('.info-block-holder');
 
-
-
-    <script>
-        const infoBlockHolders = document.querySelectorAll('.info-block-holder');
-
-        infoBlockHolders.forEach(function(holder) {
-            holder.addEventListener('mouseover', function() {
-                const infoBlock = this.closest('.info-block');
-                infoBlock.style.backgroundSize = '110%';
-            });
-
-            holder.addEventListener('mouseout', function() {
-                const infoBlock = this.closest('.info-block');
-                infoBlock.style.backgroundSize = '100%';
-            });
+    infoBlockHolders.forEach(function (holder) {
+        holder.addEventListener('mouseover', function () {
+            const infoBlock = this.closest('.info-block');
+            infoBlock.style.backgroundSize = '110%';
         });
-    </script>
-</div>
 
-
-<noscript>Please enable javascript to continue.</noscript>
+        holder.addEventListener('mouseout', function () {
+            const infoBlock = this.closest('.info-block');
+            infoBlock.style.backgroundSize = '100%';
+        });
+    });
+</script>
 </body>
 </html>

@@ -4,8 +4,7 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    margin: 20px;
-    margin-left: 0;
+    margin: 20px 20px 20px 0;
     max-width: 90%;
     text-align: center;
     background: linear-gradient(
@@ -13,7 +12,7 @@
             rgba(0, 0, 0, 0.9),
             rgba(0, 0, 0, 0.1) 45%,
             rgba(0, 0, 0, 0.8) 100%
-    ), rgba(99, 81, 69, 0.42);
+    ), rgba(99, 81, 69, 0.5);
 
     position: relative;
     left: 50%;
@@ -30,5 +29,11 @@
     #main-text {
         min-width: 980px;
         max-width: 980px;
+    }
+}
+@media all and (min-width: 1360px) {
+    #main-text {
+        min-width: 1307px;
+        max-width: 1307px;
     }
 }

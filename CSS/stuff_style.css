@@ -13,6 +13,7 @@ html, body {
     height: 100%;
     color: white;
 }
+
 body {
     background-image: linear-gradient(
             to top,
@@ -25,10 +26,7 @@ body {
     background-size: cover;
     background-position: bottom;
     background-color: rgb(31, 31, 31);
-    /*background-position-y: 80px;*/
 }
-
-
 
 .no-border {
     border: 0;
@@ -79,4 +77,36 @@ nav, div {
 
 a {
     color: #2196F3;
+}
+
+#bg-blur {
+    height: 100%;
+    width: 45%;
+
+    background-color: #6b6b6b;
+    box-shadow: #ff9446;
+
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+#wrapper-root {
+    height: 100%;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
