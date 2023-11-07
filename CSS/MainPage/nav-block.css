@@ -71,11 +71,9 @@ section {
 }
 
 
-##history-block{
+#history-block{
     background-image: linear-gradient(
             to top,
-            rgba(0, 0, 0, 0.91),
-            rgba(0, 0, 0, 0.2) 45%,
             rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.6) 45%,
             rgba(0, 0, 0, 0.8) 100%
@@ -85,8 +83,6 @@ section {
 #culture-block{
     background-image: linear-gradient(
             to top,
-            rgba(0, 0, 0, 0.91),
-            rgba(0, 0, 0, 0.2) 45%,
             rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.6) 45%,
             rgba(0, 0, 0, 0.8) 100%
@@ -96,8 +92,6 @@ section {
 #art-block{
     background-image: linear-gradient(
             to top,
-            rgba(0, 0, 0, 0.91),
-            rgba(0, 0, 0, 0.2) 45%,
             rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.6) 45%,
             rgba(0, 0, 0, 0.8) 100%
