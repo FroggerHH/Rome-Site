@@ -1,0 +1,19 @@
+.info-block-content-hover {
+    transform: scale(1.08) translateY(50px);
+}
+
+.info-block-content-hover p {
+    transform: scale(1.08);
+}
+
+.info-block-title-hover {
+    transform: translateY(50px);
+}
+
+.info-block-hover {
+    background-size: 110%;
+}
+
+.force-hover {
+
+}

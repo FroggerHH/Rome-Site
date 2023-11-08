@@ -39,18 +39,6 @@ section {
     padding: 0 30px;
 }
 
-.info-block-holder:hover .info-block-content {
-    transform: scale(1.08) translateY(50px);
-}
-
-.info-block-holder:hover .info-block-content p {
-    transform: scale(1.08);
-}
-
-.info-block-holder:hover .info-block-title {
-    transform: translateY(50px);
-}
-
 .info-block-title {
     transition: transform 0.4s ease-in-out;
     position: relative;
