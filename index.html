@@ -6,7 +6,7 @@
     <title>Древний Рим</title>
     <link href="CSS/stuff_style.css" rel="stylesheet">
     <link href="CSS/header_style.css" rel="stylesheet">
-    <link href="CSS/MainPage/mainText_style.css" rel="stylesheet">
+    <link href="CSS/mainText_style.css" rel="stylesheet">
     <link href="CSS/MainPage/nav-block.css" rel="stylesheet">
     <link href="CSS/MainPage/nav-block_hover.css" rel="stylesheet">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
@@ -14,32 +14,8 @@
 </head>
 
 <body>
-<div id="wrapper-root">
-    <div id="wrapper">
-        <header>
-            <div class="banner">
-                <div id="top-container">
-                    <div id="embedded-top-container">
-                        <picture>
-                            <img alt="logo" class="image" id="header-logo" src="images/shortcutIcon.png">
-                        </picture>
-                        <div class="top-tagline"> Римская Империя</div>
-                    </div>
-                </div>
-                <div id="top-head">
-                    <div id="top-head-text"> Римская Империя</div>
-                </div>
-            </div>
-
-            <noscript>
-                <div style="background-color: #de4949; color: #fff; padding: 5px; text-align: center;">
-                    Please enable javascript to continue.
-                </div>
-            </noscript>
-        </header>
-
-        <!--<div id="bg-blur"></div>-->
-
+<div id="wrapper">
+    <main id="main">
         <div id="main-text">
             <div id="main-text-holder">
                 <div id="main-text-content">
@@ -51,7 +27,6 @@
                 </div>
             </div>
         </div>
-
         <div class="nav-block">
             <section>
                 <a class="info-block" href="History.html" id="history-block">
@@ -108,74 +83,11 @@
                 </a>
             </section>
         </div>
-
-
-        <footer>
-            <p>&copy; 2023 Сайт о Римской Империи. Все права защищены.</p>
-        </footer>
-    </div>
+    </main>
 </div>
 
-<script>
-    const infoBlockHolders = document.querySelectorAll('.info-block');
-
-    infoBlockHolders.forEach(function (el) {
-        const classToAdd = 'force-hover';
-        el.addEventListener('mouseover', function () {
-            if (el.classList.contains(classToAdd) === false) {
-                el.classList.add(classToAdd);
-            }
-
-            updateAllHover();
-        });
-        el.addEventListener('mouseout', function () {
-            el.classList.remove(classToAdd);
-            updateAllHover();
-        });
-    });
-
-    //TODO: Move code to separate file
-</script>
-
-<script>
-    function ShouldHoverElement(el) {
-        const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-        const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
-        if (el.classList[0] !== 'info-block') el = el.closest('.info-block');
-
-        if (el.classList.contains('force-hover')) return true;
-        if (windowWidth < 750) {
-            const rect = el.getBoundingClientRect();
-            const elementTop = rect.top;
-            const elementBottom = rect.bottom;
-
-            const offset = 100;
-
-            return (
-                elementTop < windowHeight / 2 + offset &&
-                elementBottom > windowHeight / 2 - offset
-            );
-        }
-    }
-
-    window.addEventListener('scroll', updateAllHover);
-    window.addEventListener('resize', updateAllHover);
-
-    function updateAllHover() {
-        updateElementsHover(document.querySelectorAll('.info-block'));
-        updateElementsHover(document.querySelectorAll('.info-block-content'));
-        updateElementsHover(document.querySelectorAll('.info-block-title'));
-    }
-
-    function updateElementsHover(elements) {
-        elements.forEach(function (el) {
-            const classToAdd = el.classList[0] + '-hover';
-            if (ShouldHoverElement(el)) {
-                if (el.classList.contains(classToAdd)) return;
-                el.classList.add(classToAdd);
-            } else el.classList.remove(classToAdd);
-        });
-    }
-</script>
+<script src="JS/Hovering.js"></script>
+<script src="JS/Header.js"></script>
+<script src="JS/Footer.js"></script>
 </body>
 </html>

@@ -92,8 +92,7 @@ a {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
+    margin-top: 250px;
 }
 
 footer p {
@@ -101,12 +100,9 @@ footer p {
     text-align: center;
 }
 
-#wrapper-root {
-    height: 100%;
-}
-
 #wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100%;
 }
