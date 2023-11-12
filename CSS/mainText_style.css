@@ -1,12 +1,11 @@
 #main-text {
     color: #ff9a24;
-    font-size: 28px;
+    font-size: 23px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    margin: 20px 20px 20px 0;
     max-width: 90%;
-    text-align: center;
+    text-align: justify;
     background: linear-gradient(
             to right top,
             rgba(0, 0, 0, 0.9),
@@ -15,8 +14,11 @@
     ), rgba(99, 81, 69, 0.5);
 
     position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
+    margin: 20px auto auto;
+}
+
+.center-text{
+    text-align: center;
 }
 
 @media all and (min-width: 717px) {
