@@ -29,5 +29,5 @@ function linkStyle(style) {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = `../CSS/${style}.css`;
-    head.appendChild(link);
+    head.insertBefore(link, head.firstChild);
 }
