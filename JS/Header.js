@@ -4,11 +4,11 @@ document.getElementById('main').insertAdjacentHTML('afterbegin',
             <div class="banner">
                 <div id="top-container">
                     <span id="embedded-top-container">
-                        <a href="index.html" id="header-logo">
-                            <img alt="logo" class="image header-logo-img" src="images/shortcutIcon.png">
+                        <a href="../Pages/index.html" id="header-logo">
+                            <img alt="logo" class="image header-logo-img" src="../images/shortcutIcon.png">
                             <span id="header-logo-tip">
-                                <img alt="return" src="images/return-icon.png">
-                                <img alt="return" src="images/shortcutIcon.png">
+                                <img alt="return" src="../images/return-icon.png">
+                                <img alt="return" src="../images/shortcutIcon.png">
                             </span>
                         </a>
                         <span class="top-tagline"> Римская Империя</span>
