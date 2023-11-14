@@ -1,4 +1,4 @@
-body{
+body {
     background-image: linear-gradient(
             to top,
             rgba(0, 0, 0, 0.85),
@@ -7,11 +7,33 @@ body{
     ), url('../../images/personas-bg.jpg');
 }
 
-.persona{
-    display: block;
-  max-width:40%;
-  max-height:40%;
-  width: auto;
-  height: auto;
-  margin:auto;
+.persona {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*align-items: center;*/
+}
+
+.persona img{
+    width: 150px;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 5px 10px 13px rgba(0, 0, 0, 0.89);
+}
+
+.persona-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media all and (min-width: 1033px) {
+    .persona-header{
+        flex-direction: column;
+    }
+
+    .persona img{
+        width: 40%;
+        height: 40%;
+    }
 }
