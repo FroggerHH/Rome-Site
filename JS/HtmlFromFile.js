@@ -1,6 +1,6 @@
 const elements = document.querySelectorAll('[data-html_from]');
 elements.forEach(function (el) {
-    const filePath = '../Texts/' + el.dataset.html_from;
+    const filePath = 'Texts/' + el.dataset.html_from;
     fetch(filePath)
         .then(response => response.text())
         .then(data => {
