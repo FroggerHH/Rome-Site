@@ -6,3 +6,12 @@ body{
             rgba(0, 0, 0, 0.8) 100%
     ), url('../../images/personas-bg.jpg');
 }
+
+.persona{
+    display: block;
+  max-width:40%;
+  max-height:40%;
+  width: auto;
+  height: auto;
+  margin:auto;
+}
