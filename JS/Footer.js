@@ -1,7 +1,6 @@
 document.getElementById('main').insertAdjacentHTML('afterend',
     `
         <footer>
-            <p>&copy; 2023 Сайт о Римской Империи. Все права защищены.</p>
             <br>
             <a href="Anketa.html">
                 <figure>
@@ -10,5 +9,6 @@ document.getElementById('main').insertAdjacentHTML('afterend',
                 <figcaption> Оставить отзыв</figcaption>
                 </figure>
             </a>
+            <p>&copy; 2023 Сайт о Римской Империи. Все права защищены.</p>
         </footer>
     `);
