@@ -1,0 +1,17 @@
+body{
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.44) 45%,
+            rgba(0, 0, 0, 0.8) 100%
+    ), url('../../images/endempire-bg.jpg');
+}
+
+.pic{
+    display: block;
+  max-width:30%;
+  max-height:30%;
+  width: auto;
+  height: auto;
+  margin:auto;
+}
