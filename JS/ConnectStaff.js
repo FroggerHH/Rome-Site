@@ -3,7 +3,6 @@ const body = document.getElementsByTagName('body')[0];
 createScript('Hovering');
 createScript('Header');
 createScript('Footer');
-createScript('HtmlFromFile');
 
 
 function createScript(name) {
