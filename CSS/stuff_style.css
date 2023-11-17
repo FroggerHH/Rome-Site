@@ -1,3 +1,7 @@
+html{
+    color-scheame: light dark;
+}
+
 html, body {
     font-famili: system-ui;
     font-size: 1.125rem;
