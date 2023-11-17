@@ -1,10 +1,11 @@
 html, body {
-    line-height: 1.15;
+    font-famili: system-ui;
+    font-size: 1.125rem;
+    line-height: 1.6;
     -webkit-text-size-adjust: 100%;
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     vertical-align: baseline;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
